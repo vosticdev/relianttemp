@@ -1,0 +1,402 @@
+body {
+	background-color: #2c3e50;
+}
+
+/* Navbar */
+.bg-light {
+	background-color: #a6caee !important;
+	border-radius: 10px;
+	width: 60%;
+	/* Set width to 60% */
+	margin: 0 auto;
+	/* Auto margin centering */
+	margin-top: 2%;
+	display: flex;
+	/* Using Flexbox */
+	justify-content: space-between;
+	/* Align content at the ends */
+	align-items: center;
+	/* Vertical alignment */
+}
+
+.navbar-brand {
+	font-size: 18px;
+	color: #fff;
+	/* White color for text in navbar */
+	margin-right: auto;
+	/* Move .navbar-brand to the left */
+	padding: 0;
+	/* Set padding to zero */
+	margin: 0;
+	/* Set margin to zero */
+}
+
+.navbar-brand img {
+	max-width: 50px;
+	/* Set maximum logo width */
+	height: auto;
+	/* Auto adjust height */
+}
+
+
+.navbar-nav .nav-link {
+	color: #fff;
+}
+
+/* Center icons */
+.navbar-nav {
+	display: flex;
+	align-items: center;
+	/* Align icons vertically */
+	margin: 0;
+	/* Remove default margin */
+	padding: 0;
+	/* Remove default padding */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-item {
+	margin-right: 55px;
+	/* Add space between icons */
+}
+
+
+.navbar-toggler {
+	border: none;
+	/* Remove border from toggler */
+}
+
+/* Styles for login button */
+.btn-login {
+	padding: 0.6em 2em;
+	/* Reduce padding */
+	font-size: 10px;
+	/* Reduce font size */
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	/* Reduce letter spacing */
+	font-weight: 500;
+	color: #000;
+	background-color: #fff;
+	border: none;
+	border-radius: 30px;
+	/* Reduce border radius */
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+	/* Reduce shadow */
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+
+/* Move button */
+.btn-login {
+	position: absolute;
+	top: 50%;
+	/* Center vertically */
+	right: 3%;
+	/* Move from right edge */
+	transform: translateY(-50%);
+	/* Center vertically */
+}
+
+/* Increase button height on hover */
+.btn-login:hover {
+	background-color: #3498db;
+	box-shadow: 0px 12px 15px #61b2db66;
+	/* Increase shadow */
+	color: #fff;
+	transform: translateY(-5px);
+	/* Reduce hover transform */
+}
+
+/* Add small animation on button press */
+.btn-login:active {
+	transform: translateY(-1px);
+}
+
+/* Image slider */
+.owl-carousel .item img {
+	width: 100%;
+	height: auto;
+}
+
+/* Section title */
+.section-title {
+	text-align: center;
+	/* Center align title */
+	margin-bottom: 40px;
+	/* Add space below title */
+	color: #fff;
+	/* White color for text */
+}
+
+.section-title i {
+	margin-right: 10px;
+	/* Add space between icon and text */
+}
+
+
+/* Section with packages */
+.packages {
+	background-color: #2c3e50;
+	/* Darker background color */
+	padding: 50px 0;
+}
+
+.package {
+	background-color: #34495e;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	overflow-y: auto;
+	height: 300px;
+	position: relative;
+}
+
+
+.package-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+.package:hover .package-title {
+	opacity: 0;
+}
+
+
+.package img {
+	width: 100%;
+	height: auto;
+	filter: blur(2px);
+	transition: filter 0.5s ease;
+}
+
+.package-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	background: linear-gradient(to top, #3498db, transparent);
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	opacity: 0;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+.package-content h3,
+.package-content p {
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+
+.package:hover .package-content {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.package:hover {
+	transform: scale(1.05);
+}
+
+.package:hover img {
+	filter: blur(0);
+}
+
+.package-content h3,
+.package-content p,
+.package-content button {
+	color: #fff;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.package:hover .package-content h3,
+.package:hover .package-content p,
+.package:hover .package-content button {
+	opacity: 1;
+}
+
+/* Arrow and text */
+.arrow-up {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.arrow-up i {
+	font-size: 24px;
+	color: #fff;
+}
+
+.swipe-up {
+	font-size: 18px;
+	color: #fff;
+	margin-top: 5px;
+  user-select: none; /* Disable text selecting */
+  pointer-events: none; /* Ignoring mouse pointer */
+}
+
+.package:hover .arrow-up {
+	opacity: 0;
+  pointer-events: none; /* Ignoring mouse pointer when opacity is 0 */
+}
+
+
+/* Additional button styling */
+.btn-primary {
+	background-color: #3498db;
+	/* Button color */
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+	background-color: #2980b9;
+	/* Change color on hover */
+}
+
+/* Styles for Owl Carousel */
+.owl-carousel {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+.owl-carousel .item {
+	flex: 0 0 auto;
+	margin-right: 10px;
+	/* Add space between items */
+	position: relative;
+	/* Position relative */
+}
+
+.owl-carousel .item img {
+	display: block;
+	max-width: 100%;
+	/* Set max width to 100% */
+	height: auto;
+	border-radius: 10px;
+	/* Add rounded corners */
+	transition: filter 0.3s ease;
+	/* Add transition for filter */
+}
+
+/* Styles for content (title and description) */
+.content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(to top, rgba(166, 202, 238, 0.8), transparent);
+	/* Add gradient */
+	padding: 10px;
+	/* Add padding */
+	box-sizing: border-box;
+	/* Use border-box */
+	transition: bottom 0.3s ease, opacity 0.3s ease;
+	/* Add transition for position and opacity */
+	opacity: 0;
+	/* Initial opacity */
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* Styles for title */
+.title {
+	color: #fff;
+	/* Text color */
+	font-size: 18px;
+	/* Font size */
+	margin-bottom: 5px;
+	/* Add space below */
+}
+
+/* Styles for description */
+.description {
+	color: #fff;
+	/* Text color */
+	font-size: 14px;
+	/* Font size */
+}
+
+/* Hover effect */
+.item:hover .content {
+	bottom: 0;
+	/* Move content to bottom on hover */
+	opacity: 1;
+	/* Change opacity on hover */
+}
+
+.item:hover img {
+	filter: blur(2px);
+	/* Blur image on hover */
+}
+
+/* Footer section */
+.footer {
+  color: #fff; /* Beli tekst */
+  text-align: center; /* Centriranje teksta */
+  padding: 20px 0; /* Dodavanje punjenja iznad i ispod footera */
+}
+
+.footer a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.footer a:hover {
+	color:#3498db;
+}
+
+/* Adjust button size for smaller screens */
+@media only screen and (max-width: 768px) {
+	.btn-login {
+		font-size: 12px;
+		padding: 0.4em 1.2em;
+		position: relative;
+		/* Adjust button position for smaller screens */
+		top: unset;
+		right: unset;
+		transform: unset;
+		margin-right: 10px;
+		/* Add margin for spacing */
+	}
+
+	.owl-carousel {
+		margin-top: 12%;
+		margin-left: 1%;
+	}
+
+}
+
+/* Adjust navbar height for smaller screens */
+@media only screen and (max-width: 576px) {
+	.bg-light {
+		width: 90%;
+		padding: 10px;
+		/* Add padding to the navbar */
+	}
+}

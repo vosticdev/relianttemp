@@ -1,0 +1,9 @@
+/* Dodajemo stilove za prilagođeni Toastify */
+.toast-custom {
+    color: #fff;
+    border-radius: 30%;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}

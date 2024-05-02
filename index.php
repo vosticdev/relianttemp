@@ -1,3 +1,6 @@
+<!-- Php scripts include -->
+<?php include_once('modules/process.php') ?>
+<!-- Php scripts include end -->
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -188,7 +191,7 @@
                      </div>
                      <div class="statistic-info">
                         <h3>Registered Users</h3>
-                        <p class="statistic-text" id="registered-users">Loading...</p>
+                        <p class="statistic-text" id="registered-users"><?php echo $total_users; ?></p>
                         <!-- PHP will populate this -->
                      </div>
                   </div>

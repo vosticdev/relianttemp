@@ -52,6 +52,46 @@
       </div>
    </div>
 </div>
+<!-- Features Section -->
+<section id="features" class="features">
+   <div class="container">
+      <h2 class="section-title"><i class="fas fa-tasks"></i> Features</h2>
+      <div class="row">
+         <!-- Feature 1: Support -->
+         <div class="col-md-3">
+            <div class="feature-item">
+               <i class="fas fa-headset"></i>
+               <h3>24/7 Support</h3>
+               <p>Professional support team available round the clock to assist you.</p>
+            </div>
+         </div>
+         <!-- Feature 2: DDoS Protection -->
+         <div class="col-md-3">
+            <div class="feature-item">
+               <i class="fas fa-shield-alt"></i>
+               <h3>DDoS Protection</h3>
+               <p>Advanced DDoS protection to keep your server secure from attacks.</p>
+            </div>
+         </div>
+         <!-- Feature 3: Control Panel -->
+         <div class="col-md-3">
+            <div class="feature-item">
+               <i class="fas fa-desktop"></i>
+               <h3>Control Panel</h3>
+               <p>User-friendly control panel for easy server management.</p>
+            </div>
+         </div>
+         <!-- Feature 4: Cashback -->
+         <div class="col-md-3">
+            <div class="feature-item">
+               <i class="fas fa-money-bill-wave"></i>
+               <h3>Cashback</h3>
+               <p>Get cashback rewards on select plans and purchases in first 5 days.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
 <!-- Packages -->
 <section id="packages" class="packages">
    <div class="container">
@@ -119,5 +159,66 @@
          <!-- Add more packages here --> 
       </div>
    </div>
+</section>
+<!-- Info Hosting -->
+<section id="statistics" class="statistics">
+   <div class="container">
+      <h2 class="section-title"><i class="fa-solid fa-chart-simple"></i> Statistics</h2>
+      <div class="row">
+         <div class="col-md-3">
+            <div class="statistic">
+               <div class="statistic-icon">
+                  <i class="fas fa-users"></i> <!-- Icon for registered users -->
+               </div>
+               <div class="statistic-info">
+                  <h3>Registered Users</h3>
+                  <p class="statistic-text" id="registered-users">Loading...</p>
+                  <!-- PHP will populate this -->
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <div class="statistic">
+               <div class="statistic-icon">
+                  <i class="fas fa-server"></i> <!-- Icon for servers -->
+               </div>
+               <div class="statistic-info">
+                  <h3>Servers</h3>
+                  <p class="statistic-text" id="server-count">Loading...</p>
+                  <!-- PHP will populate this -->
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <div class="statistic">
+               <div class="statistic-icon">
+                  <i class="fas fa-hdd"></i> <!-- Icon for hosting machines -->
+               </div>
+               <div class="statistic-info">
+                  <h3>Hosting Machines</h3>
+                  <p class="statistic-text" id="hosting-machines">Loading...</p>
+                  <!-- PHP will populate this -->
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <div class="statistic">
+               <div class="statistic-icon">
+                  <i class="fab fa-instagram"></i> <!-- Icon for Instagram followers -->
+               </div>
+               <div class="statistic-info">
+                  <h3>Instagram Followers</h3>
+                  <p class="statistic-text" id="instagram-followers">Loading...</p>
+                  <!-- PHP will populate this -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Location -->
+<section class="location-section">
+   <h2><i class="fa-solid fa-map-location-dot"></i> Data Center Locations</h2>
+   <div id="vmap" class="map"></div>
 </section>
 <?php include_once('modules/footer.php'); ?>

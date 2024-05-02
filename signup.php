@@ -18,22 +18,20 @@
     <div class="container">
         <div class="signup-box">
             <h2><i class="fa-solid fa-user"></i> Sign Up</h2>
-            <form id="signup-form" action="modules/signup_process.php" method="POST">
-                <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" id="username" name="username" placeholder="Username" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                </div>
-                <button type="button" class="btn btn-signup" onclick="registerUser()"><i class="fa-solid fa-right-to-bracket"></i> Sign Up</button>
-            </form>
-            <p>Already have an account? <a href="login.php">Login</a></p>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="button" class="btn btn-signup" onclick="registerUser()"><i class="fa-solid fa-right-to-bracket"></i> Sign Up</button>
+            <p>lready have an account? <a href="login.php">Login</a></p>
             <div class="logo-container">
                 <img src="https://i.ibb.co/9hJs5JN/Untitled-1.png" alt="Logo">
             </div>

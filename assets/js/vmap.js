@@ -1,6 +1,5 @@
 // Map
 jQuery(document).ready(function() {
-    console.log("Document ready!");
     jQuery('#vmap').vectorMap(
         {
             map: 'world_en',
@@ -20,5 +19,8 @@ jQuery(document).ready(function() {
         });
         jQuery('#vmap').vectorMap('zoomIn');
         jQuery('#vmap').vectorMap('zoomIn');
-    console.log("Map initialized!");
 });
+
+document.querySelector('.map').addEventListener('touchmove', function(event) {
+    event.preventDefault();
+}, { passive: false });
